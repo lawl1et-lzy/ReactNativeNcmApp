@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import RootCom from './src/components/root';
+import RootCom from '@components/root/index.js';
 import React from 'react';
 
 const App = () => {
