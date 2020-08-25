@@ -1,9 +1,19 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {View, Text, Dimensions, StyleSheet} from 'react-native';
+const {width, height} = Dimensions.get('window');
+import CommonStyle from '@/styles/style';
 class Discover extends Component {
   render() {
-    return <Text>发现</Text>;
+    return (
+      <View style={CommonStyle.container}>
+        <Text style={styles.text}>发现</Text>
+      </View>
+    );
   }
 }
-
+const styles = StyleSheet.create({
+  text: {
+    color: 'red',
+  },
+});
 export default Discover;
