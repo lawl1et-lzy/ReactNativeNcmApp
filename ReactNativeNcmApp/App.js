@@ -6,11 +6,11 @@
  * @flow strict-local
  */
 
-import RootCom from '@components/root/index.js';
 import React from 'react';
+import Navigation from '@/navigation/Navigation';
 
 const App = () => {
-  return <RootCom />;
+  return <Navigation />;
 };
 
 export default App;

@@ -1,4 +1,4 @@
-import config from './config';
+import config from './Config';
 import qs from 'qs';
 export default class Login {
   // 密码登录
