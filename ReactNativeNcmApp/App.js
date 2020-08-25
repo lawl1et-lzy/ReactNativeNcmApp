@@ -8,9 +8,15 @@
 
 import React from 'react';
 import Navigation from '@/navigation/Navigation';
+import {SafeAreaView} from 'react-native';
+import CommonStyle from '@/styles/style';
 
 const App = () => {
-  return <Navigation />;
+  return (
+    <SafeAreaView style={CommonStyle.container}>
+      <Navigation />
+    </SafeAreaView>
+  );
 };
 
 export default App;
