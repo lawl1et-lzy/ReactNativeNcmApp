@@ -15,15 +15,11 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import LoginApi from '@/services/login.api';
 class Root extends Component {
   constructor(props) {
     super(props);
   }
-  async UNSAFE_componentWillMount() {
-    const res = await LoginApi.loginWithPassword();
-    console.log('res', res);
-  }
+  async UNSAFE_componentWillMount() {}
   render() {
     return (
       <>
