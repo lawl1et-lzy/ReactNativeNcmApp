@@ -1,28 +1,19 @@
 import React, {Component} from 'react';
-import {View, Text, Dimensions, StyleSheet, Button} from 'react-native';
-const {width, height} = Dimensions.get('window');
-import CommonStyle from '@/styles/style';
+import {Provider} from 'react-redux';
+import store from './store/store';
+import DiscoverContainer from './containers/DiscoverContainer';
 class Discover extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-      <View style={[styles.container]}>
-        <Text style={styles.text}>发现</Text>
-      </View>
+      <Provider store={store}>
+        <DiscoverContainer />
+      </Provider>
     );
   }
 }
-const styles = StyleSheet.create({
-  container: {
-    width,
-    height,
-    padding: 20,
-    borderColor: 'red',
-    borderWidth: 1,
-    borderStyle: 'solid',
-    backgroundColor: 'black',
-  },
-  text: {
-    color: 'red',
-  },
-});
+
 export default Discover;
